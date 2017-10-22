@@ -47,7 +47,6 @@ public class WillRescue extends AppCompatActivity {
                     @Override
                     public void run() {
                         try {
-                            Toast.makeText(getApplicationContext(),"Searching....",Toast.LENGTH_LONG).show();
                             while (!isInterrupted()) {
                                 Thread.sleep(1000);
                                 runOnUiThread(new Runnable() {
